@@ -4,11 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/amitojha18/java-app.git'
-            }
-        }
 
         stage('Maven Build') {
             steps {
@@ -35,4 +30,7 @@ pipeline {
         }
     }
 }
+
+
+
 
